@@ -1,0 +1,224 @@
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+#myInput {
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	width: 100%;
+	font-size: 16px;
+	padding: 8px 20px 8px 40px;
+	border: 1px solid #ddd;
+	margin-bottom: 12px;
+}
+#main_container {
+	margin-top: 100px;
+}
+i.material-icons {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: gray;
+}
+#city_name_list {
+	height: 230px;
+	display: block;
+	overflow-y: auto;
+}
+#city_name_list li {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.pagination li:hover {
+	cursor: pointer;
+}
+#example_info {
+	display: none;
+}
+#example,
+.fixed_header {
+	width: 100%;
+	background-color: #f3f3f3;
+}
+#example {
+	border: 1px solid #ddd !important;
+}
+#example tbody tr {
+	font-size: 13px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 5.08;
+	letter-spacing: normal;
+	text-align: center;
+	color: #283655;
+}
+#example_length {
+	margin-top: 15px;
+}
+#example_length {
+	width: 100% !important;
+	box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+	top: 20px !important;
+}
+#example_length label {
+	line-height: 3;
+	padding-left: 10px;
+}
+#example_paginate {
+	margin-top: 0px !important;
+	position: absolute;
+	/* top: -16px; */
+	right: 0;
+	margin-top: 34px;
+	padding-top: 30px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+	padding-left: 25px !important;
+	font-weight: 600 !important;
+	color: #0275d8 !important;
+	background: transparent;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:after {
+	content: ' >' !important;
+	font-weight: bold !important;
+	margin-left: 5px !important;
+}
+.next:after {
+	content: '>';
+	font-weight: bold;
+	margin-left: 5px;
+}
+.previous:before {
+	content: '< ';
+	font-weight: bold;
+	margin-right: 5px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:before {
+	content: '< ' !important;
+	font-weight: bold !important;
+	margin-right: 5px !important;
+}
+#example_paginate a {
+	text-transform: capitalize !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+	color: #c7d7e6 !important;
+	margin-right: 10px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+	padding-right: 25px !important;
+	font-weight: 600 !important;
+	color: #0275d8 !important;
+	background: transparent;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+	background: #2094ff !important;
+	color: #ffffff !important;
+	font-weight: 600 !important;
+	border: 0 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	text-transform: uppercase !important;
+	padding: 0 !important;
+	color: #0275d8 !important;
+}
+.dataTables_paginate span {
+	display: inline-block !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+	border-radius: 2px !important;
+	background-color: #283655 !important;
+}
+#example_paginate span a {
+	height: 23px !important;
+	width: 25px !important;
+	line-height: 23px !important;
+	margin-right: 0px !important;
+}
+.big {
+	font-size: 1.2em;
+}
+
+.small {
+	font-size: .7em;
+}
+
+/* Custom dropdown */
+.custom-dropdown {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+.custom-dropdown select {
+	background-color: #ddd;
+	color: #000;
+	font-size: inherit;
+	padding: .5em;
+	padding-right: 2.5em;
+	border: 0;
+	margin: 0;
+	border-radius: 3px;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+}
+
+.custom-dropdown::after {
+	/*  Custom dropdown arrow */
+	content: "\25BC";
+	height: 1em;
+	font-size: .625em;
+	line-height: 1;
+	right: 1.2em;
+	top: 50%;
+	margin-top: -.5em;
+}
+
+.custom-dropdown::before {
+	/*  Custom dropdown arrow cover */
+	width: 2em;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown select[disabled] {
+	color: rgba(0, 0, 0, .3);
+}
+
+.custom-dropdown select[disabled]::after {
+	color: rgba(0, 0, 0, .1);
+}
+
+.custom-dropdown::before {
+	background-color: rgba(0, 0, 0, .15);
+}
+
+.custom-dropdown::after {
+	color: rgba(0, 0, 0, .4);
+}

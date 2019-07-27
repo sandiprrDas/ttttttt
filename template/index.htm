@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Bank Name</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.js"></script>
+</head>
+<body>
+    <div class="container" id="main_container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="dropdown">
+                <span class="custom-dropdown big">
+                    <select>
+                        <option>Mumbai</option>
+                        <option>Hyderabad</option>
+                        <option>Agartala</option>
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                    </select>
+                </span>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <div class="search_container">
+                    <i class="material-icons">search</i>
+                    <input type="text" class="search_by_name" id="myInput" placeholder="Search for bank names.." title="Type in a bank name">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="monthly_log_datatable">
+                    <table class="table fyle_container fixed_header" id="example">
+                        <thead>
+                            <tr>
+                                <th>Bank ID</th>
+                                <th>IFSC</th>
+                                <th>Branch</th>
+                                <th>Address</th>
+                                <th>City</th>
+                                <th>District</th>
+                                <th>State</th>
+                                <th>Bank Name</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>
